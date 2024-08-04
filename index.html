@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>main music play page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+</head>
+
+<body>
+  
+  <img id='playbg' src="" alt="music.jpg">
+
+  <div class="container">
+
+
+
+    <div class="content">
+      <img id="mainimg" src="" alt="anotherLove.jpg">
+
+      <div class="contentwords">
+        <div>
+          <div id="songname">Song name</div>
+          <div id="artist">artist</div>
+        </div>
+
+        <img id="heart" src="assets/buttons/heart-regular.svg" alt="heart-regular.svg">
+
+
+      </div>
+
+
+    </div>
+
+    <div class="progress">
+      <input id="progressbar" type="range" min="0" max="100">
+      <div id="audio-time">
+        <span id=current-time>0:00</span>
+        <span id=duration>0:00</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <img id="shuffle" src="assets/buttons/shuffle-solid.svg" alt="shuffle-solid.svg">
+      <img id="step-backward" src="assets/buttons/backward-step-solid.svg" alt="backward-step-solid.svg">
+      <img id="play-pause" src="assets/buttons/circle-play-solid.svg" alt="play.svg">
+      <img id="step-forward" src="assets/buttons/forward-step-solid.svg" alt="forward-step-solid.svg">
+      <img id="repeat" src="/assets/buttons/repeat.png" alt="repeat-solid.svg">
+
+    </div>
+
+    <audio id="audio" src="music4.mp3"></audio>
+
+    <div id="tracklist"> 0 of 0
+    </div>
+
+
+  </div>
+
+ 
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: black;
+  font-family: serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 708px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  
+  box-shadow: 10px 10px 30px 20px rgba(0, 0, 0,0.2);
+  z-index: 1; /* Ensure the container is above the background */
+}
+
+header{
+  background: whitesmoke;
+  height: 40px;
+  width: 100%;
+}
+
+
+
+#playbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  object-fit: cover;/*Ensure that image not look */
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;  
+ 
+}
+
+
+
+
+.container,.container div ,.buttons img, .content div img, .progress span{
+  background: transparent;
+}
+
+
+
+.content {
+  height: 400px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.content img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0,0.3);
+  margin-bottom: 15px;
+}
+
+.contentwords{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contentwords div{
+  margin-top: 5px;
+}
+
+#heart{
+  box-shadow: none;
+  width: 25px;
+  height: 50px;
+  
+}
+
+#songname {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#artist {
+  font-size: 18px;
+  color: lightgrey;
+}
+
+.buttons {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons img:hover,.contentwords img:hover  {
+  transform: scale(1.2);
+}
+
+.progress {
+ 
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#audio-time{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+#audio-time span{
+  font-size: 13px;
+  
+}
+
+
+#progressbar {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: darkgrey;
+  border-radius: 5px;
+  
+  
+}
+
+#progressbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  background: white;
+  border-radius: 10px;
+  border: solid transparent 5px;
+}
+
+#progressbar::-webkit-slider-thumb:hover{
+  transform: scale(1.1);
+}
+
+#progressbar input::-moz-range-progress {
+  background: white;
+  height: 5px;
+  border-radius: 5px;
+}
+
+#play-pause{
+  width: 60px;
+  height: 60px;
+}
+
+#shuffle,#repeat{
+  width: 20px;
+  height: 20px;
+}
+
+#step-backward, #step-forward{
+  width: 30px;
+  height: 30px;
+}
